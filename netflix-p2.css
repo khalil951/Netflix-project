@@ -1,0 +1,273 @@
+
+html{
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    height: 1200px ;
+    font-size: 14px;
+}
+
+
+.showcase {
+    height: 80%;
+   
+}
+
+.showcase::after{
+    box-shadow: none;
+}
+
+.showcase .netflix-icon{
+    width: 170px;
+    position: absolute;
+    left: 0;
+    top : 0;
+    transform: translate(20px , 20px);
+    z-index: 3;
+}
+
+
+ 
+ 
+ .showcase-content
+ { 
+     margin: 0;
+     width: 33%;
+     height: 60%;
+     top: 15%;
+     left: 50%;
+     transform: translate(-50%);
+     background-color: rgba(0,0,0,.6);
+     z-index: 0.5;
+     text-align: left;
+    
+    
+     
+     
+ }
+
+ .showcase-content h1 {
+     font-size: 2rem;
+     transform: translate(-80%);
+    
+ }
+
+
+ .showcase-content form {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 0;
+    margin-bottom: 0 ;
+ }
+
+ .showcase-content form .user-data {
+    border-radius: 4px;
+    border: 0;
+    color: #fff;
+    background: #333;
+    font-size: 16px;
+    line-height: 50px;
+    padding: 16px 20px 0; 
+ }
+
+ 
+
+ .btn-xl {
+     font-size: 16px;
+     font-weight: 700;
+     text-transform: none;
+    padding: 1rem 0;
+     margin-top: 2rem;
+     margin-bottom: 0.3rem;
+     border-radius: 3px;
+     margin-right: 0;
+ }
+
+
+ 
+ input[type="checkbox"]:checked {
+    box-shadow: 0 0 0 3px #333;
+  }
+
+ .grey-text{
+    color: #737373;
+    font-weight: 500;
+    background-color: transparent;
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+ }
+
+ .showcase-content form .underline-link:hover{
+    text-decoration: underline #737373  !important;
+ }
+ 
+ .border-bottom{
+    border-bottom: 2px solid chocolate  !important;
+}
+
+
+
+
+ .footer{
+     height: 20%;
+     width: 100%;
+     color: #737373 ;
+ }
+ 
+ 
+ .footer-cols{
+     margin-top: 1rem;
+ }
+ 
+ .footer #footerContact{
+     font-size: 16px;
+     font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
+     
+ }
+
+ .footer #footerContact:hover{
+    text-decoration: underline #737373;
+ }
+
+ 
+
+
+.footer p{
+    font-size: 20px;
+    font-family: 'The Nautigal', cursive !important;
+    text-align: center;
+}
+
+
+ 
+ @media(max-width : 850px)
+ {
+
+    body{
+        height: 1000px;
+    }
+
+
+.showcase {
+    background-image:none;
+    height:70%
+    
+}
+
+.showcase::after{
+    border-bottom: 2px solid #737373;
+}
+
+.showcase-content{
+   height: 90%;
+    width: 90%;
+    margin-top:0;
+    position: relative;
+    top: 10%;
+   
+   
+}
+
+
+.showcase-content h1{
+    position: absolute;
+    top: 3rem;
+    left: 5rem;
+}
+
+.showcase-content form{
+    width: 100%;
+}
+.showcase-content form .user-data {
+    font-size: 14px;
+    line-height: 40px;
+    padding: 13px 17px 0;  
+}
+.showcase-content form .showcase-container{
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    grid-gap:1rem ;
+   
+}
+#fbLog{
+    font-size: 13px;
+    color: #333;
+}
+#SignIn-h2{
+    font-size: 16px;
+}
+
+
+ }
+
+
+ .footer{
+     margin-top: 10% ;
+     margin-left: 5rem;
+     
+ }
+
+ .footer-cols{
+     margin-top: 5%;
+     grid-template-columns: repeat(3,1fr) !important;
+    
+    }
+
+.footer ul li{
+    padding-bottom: 1rem;
+  
+}
+
+
+
+
+
+
+
+@media(max-width : 510px)
+{
+    .showcase .netflix-icon{
+        width: 85px;
+        
+    }
+
+    .showcase-content{
+        top: 1.5rem;
+    }
+
+
+    .showcase-content form .showcase-container{
+        grid-template-columns: 3fr 1fr;
+    }
+   
+     
+    .footer{
+        margin-left: 4rem;
+    }
+   
+   
+    .footer ul:nth-child(3){
+    display: none  !important; 
+    }
+    .footer-cols{
+        grid-template-columns: repeat(2,1fr)   !important;
+    }
+   
+}
+
+
+
+@media(max-width : 346px)
+{
+
+    .showcase-content form .showcase-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .footer{
+        margin-left: 3rem;
+    }
+
+
+}

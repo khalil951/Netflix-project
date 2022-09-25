@@ -1,0 +1,323 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix - Watch TV Shows Online , Watch Movies online </title>
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+        integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css"
+        integrity="sha384-7ynz3n3tAGNUYFZD3cWe5PDcE36xj85vyFkawcF6tIwxvIecqKvfwLiaFdizhPpN" crossorigin="anonymous">
+       
+        <link rel="stylesheet" href="netflix-p1.css">
+       
+</head>
+
+<body>
+    <header class="showcase">
+        <div class="showcase-top">
+            <img src="https://i.ibb.co/r5krrdz/logo.png" alt="NETFLIX">
+            <a href="netflix-p2.html" class="btn btn-rounded">Sign In</a>
+        </div>
+
+        <div class="showcase-content">
+            <h1>Unlimited movies, TV <br> shows, and more.</h1>
+            <p>Watch anywhere . Cancel anytime</p>
+            <a href="#" class="btn btn-xl">
+                Watch Free For 30 Days <i class="bi bi-chevron-right btn-icon"></i>
+            </a>
+
+            <nav class="navbar navbar-light bg-light">
+                <form class="container-fluid">
+                  <div class="input-group">
+                    <span class="input-group-text" id="basic-addon1">#</span>
+                    <input type="text" class="form-control" placeholder="search" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+                </form>
+              </nav>
+
+        </div> 
+
+
+     <!-- Side Bar  -->
+
+   
+  <div  id="SideBar"   class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 280px;">
+   
+    <div class="SidebarInner">
+        <i class="bi bi-list fa-2x"></i>  
+        </div> 
+    
+    
+    <div class="SidebarOutter">
+    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+      </a>
+      <ul class="nav nav-pills flex-column mb-auto">
+        <li  class="nav-item">
+          <a href="#" class="nav-link active" aria-current="page">
+              <i class="bi bi-house-door"></i>
+              <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
+            Home
+          </a>          
+        </li>
+        <li>
+          <a href="#" class="nav-link text-white">
+              <i class="bi bi-speedometer2"></i>
+              <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
+            Dashboard
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link text-white">
+              <i class="bi bi-border-style"></i>
+              <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"></use></svg>
+            Contact us
+          </a>
+        </li>
+        <li id="bestShows">
+          <a href="#" class="nav-link text-white">
+              <i class="bi bi-kanban"></i>
+              <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"></use></svg>
+            Best shows
+          </a>
+        </li>
+        <li>
+          <a href="#"  id="toggledown" class="nav-link text-white">
+              <i     class="bi bi-person-circle"></i>
+              <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
+            Customer
+             <i id="toggle"  class="bi bi-chevron-compact-down"></i>  
+          </a>
+        </li>
+      </ul>
+      
+      <div class="dropdown">
+        <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+        </a>
+        <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
+          <li><a class="dropdown-item" href="#">News & opinion</a></li>
+          <li><a class="dropdown-item" href="#">Settings</a></li>
+          <li><a class="dropdown-item" href="#">Profile</a></li>
+          <li><a class="dropdown-item" href="#">Sign out</a></li>
+        </ul>
+      </div>
+    
+      <div class="showContainer">
+        <ul></ul>
+    </div>
+    
+</div> 
+   
+</div>
+
+
+
+    </header>
+
+    <section class="tabs">
+        <div class="container">
+            <div id="tab-1" class="tab-item tab-border">
+                <i class="bi bi-door-open fa-3x"></i>
+                <p class="hide-sm">Cancel Anytime</p>
+            </div>
+
+
+            <div id="tab-2" class="tab-item  ">
+                <i class="bi bi-tablet fa-3x"></i>
+                <p class="hide-sm">Watch Anywhere</p>
+            </div>
+
+
+            <div id="tab-3" class="tab-item  ">
+                <i class="bi bi-tags fa-3x"></i>
+                <p class="hide-sm">Pick your price</p>
+            </div>
+
+
+        </div>
+    </section>
+
+    <section class="tab-content">
+        <div class="container">
+            <!-- Tab Content 1   -->
+            <div id="tab-1-content" class="tab-content-item show">
+                <div class="tab-1-content-inner">
+                    <div>
+                        <p class="text-lg">
+                            if you decide Netflix isn't for you - no problem. No commitment.
+                            Cancel online anytime.
+                        </p>
+                        <a href="#" class="btn btn-lg">
+                            WATCH NOW
+                        </a>
+                    </div>
+                    <img src="https://i.ibb.co/J2xDJV7/tab-content-1.png" alt="/">
+
+                </div>
+
+
+            </div>
+
+
+            <!-- Tab Content 2   -->
+
+            <div id="tab-2-content" class="tab-content-item">
+                <div class="tab-2-content-top">
+                    <p class="text-lg">
+                        Watch TV shows and movies anytime , anywhere - personalized
+                        you.
+                    </p>
+                    <a href="#" class="btn btn-lg">Watch Now <span>!</span> </a>
+                </div>
+
+                <div class="tab-2-content-bottom">
+                    <div>
+                        <img src="https://i.ibb.co/DpdN7Gn/tab-content-2-1.png" alt="1">
+                        <p class="text-md">Watch your TV</p>
+                        <p class="text-dark">
+                            Smart TVs, Playstation , Xbox , Chromecast , Apple TV ,
+                            Blu-ray
+                            players and more. </p>
+                    </div>
+                    <div>
+                        <img src="https://i.ibb.co/R3r1SPX/tab-content-2-2.png" alt="2">
+                        <p class="text-md">Watch instantly or download for late</p>
+                        <p class="text-dark">
+                            Available on phone and tablet , whenever you go.
+                        </p>
+
+
+                    </div>
+                    <div>
+                        <img src="https://i.ibb.co/gDhnwWn/tab-content-2-3.png" alt="3">
+                        <p class="text-md">Use any computer</p>
+                        <p class="text-dark">
+                            Watch right on Netflix.com
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <!-- Tab Content 3  -->
+            <div id="tab-3-content" class="tab-content-item">
+                <div class="text-center">
+                    <p class="text-lg">
+                        Choose one plan and watch everything on Netflix
+                    </p>
+                    <a href="#" class="btn btn-lg">Watch Free For 30 Days</a>
+                </div>
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Basic</th>
+                            <th>Standard</th>
+                            <th>Premium</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="tr">
+                            <td>Monthly price after free month ends on 1/1/2022</td>
+                            <td>$8.99</td>
+                            <td>$12.99</td>
+                            <td>$15.99</td>
+                        </tr>
+                        <tr class="tr">
+                            <td>HD Available</td>
+                            <td><i class="bi bi-x"></i></td>
+                            <td><i class="bi bi-check2"></i></td>
+                            <td><i class="bi bi-check2"></i></td>
+                        </tr>
+                        <tr class="tr">
+                            <td>Ultra HD Available</td>
+                            <td><i class="bi bi-x"></i></td>
+                            <td><i class="bi bi-x"></i></td>
+                            <td><i class="bi bi-check2"></i></td>
+                        </tr>
+                        <tr class="tr">
+                            <td>Screens you can watch on at the same time</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>4</td>
+                        </tr>
+                        <tr class="tr">
+                            <td>Watch on your laptop , TV , phone and tablet </td>
+                            <td><i class="bi bi-check2"></i></td>
+                            <td><i class="bi bi-check2"></i></td>
+                            <td><i class="bi bi-check2"></i></td>
+                        </tr>
+                        <tr class="tr">
+                            <td>Unlimited movies ant tv shows</td>
+                            <td><i class="bi bi-check2"></i></td>
+                            <td><i class="bi bi-check2"></i></td>
+                            <td><i class="bi bi-check2"></i></td>
+                        </tr>
+                        <tr class="tr">
+                            <td>Cancel anytime</td>
+                            <td><i class="bi bi-check2"></i></td>
+                            <td><i class="bi bi-check2"></i></td>
+                            <td><i class="bi bi-check2"></i></td>
+                        </tr>
+                        <tr class="tr">
+                            <td>First month free</td>
+                            <td><i class="bi bi-check2"></i></td>
+                            <td><i class="bi bi-check2"></i></td>
+                            <td><i class="bi bi-check2"></i></td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer class="footer">
+
+        <p>Questions ? Call 1-866-579-7172</p>
+        <div class="footer-cols">
+            <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Investor Relations</a></li>
+                <li><a href="#">Ways To Watch</a></li>
+                <li><a href="#">Corporate Information</a></li>
+                <li><a href="#">Netflix Originals</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Terms Of Use</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Account</a></li>
+                <li><a href="#">Redeem Gift Cards</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Speed Test</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Media Center</a></li>
+                <li><a href="#">Buy Gift Cards</a></li>
+                <li><a href="#">Cookie Preferences</a></li>
+                <li><a href="#">Legal Notices</a></li>
+            </ul>
+        </div>
+
+        </div>
+
+
+    </footer>
+    <script src="netflix-p1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+</body>
+
+</html>
